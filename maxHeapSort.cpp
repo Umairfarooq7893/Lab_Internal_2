@@ -1,0 +1,48 @@
+#include <iostream>
+using namespace std;
+
+void heapify(int arr[], int n, int i) {
+    int largest = i;       // let largest is root
+    int left    = 2 * i + 1;  // left = 2*i + 1
+    int right   = 2 * i + 2; // right = 2*i + 2
+    
+    if (left < n && arr[left] > arr[largest])
+        largest = left;
+
+    if (right < n && arr[right] > arr[largest])
+        largest = right;
+
+    // If largest is not root
+    if (largest != i) {
+        swap(arr[i], arr[largest]);
+        heapify(arr, n, largest); // Recursively heapify the affected subtree
+    }
+}
+
+void heapSort(int arr[], int n) {
+    // Build max heap
+    for (int i = n / 2 - 1; i >= 0; i--)
+    // Convert array into max heap
+        heapify(arr, n, i);
+    // Extract elements from heap one by one
+    for (int i = n - 1; i > 0; i--) {
+        swap(arr[0], arr[i]);        // Move current root to end
+        heapify(arr, i, 0);          // Call heapify on the reduced heap
+    }
+}
+// print array
+void printArray(int arr[], int n) {
+    for (int i = 0; i < n; ++i)
+        cout << arr[i] << " ";
+    cout << "\n";
+}
+int main() {
+    int arr[] = {20, 10, 30, 50, 60, 15, 5};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    cout << "Original array:\n";
+    printArray(arr, n);
+    heapSort(arr, n);
+    cout << "Sorted array using Heap Sort:\n";
+    printArray(arr, n);
+    return 0;
+}

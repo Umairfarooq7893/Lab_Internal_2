@@ -13,13 +13,15 @@ BST ADT (Binary Search Tree)
 Binary Tree ADT
 Tree Traversals (Inorder, Preorder, Postorder)
 
-Queue using Array
-Queue using Linked List
+Queue using Array.
+Queue using Linked List.
+Queue using circular Linked List.
+
 
 Min & Max (Heap or basic)
-Heap Sort
+Heap Sort.
 
 DFS (Depth First Search)
 BFS (Breadth First Search)
 
-All programs of Hashing
+All programs of Hashing.
