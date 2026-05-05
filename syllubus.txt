@@ -2,13 +2,15 @@ Lab Internal 2 Programs
 DLL (Doubly Linked List) ADT
 CLL (Circular Linked List) ADT
 
-All programs of Hashing.
 
 Stack using Array
 Stack using Linked List
 Infix → Postfix Conversion
 Parentheses Matching
 String Palindrome using Stack
+
+All programs of Hashing.
+
 
 BST ADT (Binary Search Tree)
 Binary Tree ADT
