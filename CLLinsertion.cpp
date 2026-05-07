@@ -47,19 +47,21 @@ void insertAtEnd(int value) {
     }
 }
 
-void insertAtPosition(int value, int position) {
-    if (position < 1) {
-        cout << "Position should be >= 1\n";
-        return;
-    }
-    if (position == 1) {
-        insertAtBeginning(value);
-        return;
-    }
-    Node* newNode = new Node();
-    newNode->data = value;
-    Node* temp = head;
-    for (int i = 1; i < position - 1 && temp->next != head; i++) {
+    void insertAtPosition(int value, int position) {
+        if (position < 1) {
+            cout << "Position should be >= 1." << endl;
+            return;
+        }
+        if (position == 1) {
+            insertAtBeginning(value);
+            return;
+        }
+        Node* newNode = new Node();
+        newNode->data = value;
+        newNode->next =NULL;
+
+        Node* temp = head;
+        for (int i = 1; i < position - 1 && temp->next != head; i++) {
             temp = temp->next;
         }
         if (temp->next == head && position > 2) {
@@ -67,16 +69,15 @@ void insertAtPosition(int value, int position) {
             delete newNode;
             return;
         }
-    newNode->next = temp->next;
-    temp->next = newNode;
-}
+        newNode->next = temp->next;
+        temp->next = newNode;
+    }
 // Display
 void display() {
     if (head == NULL) {
         cout << "List is empty\n";
         return;
     }
-
     Node* temp = head;
     do {
         cout << temp->data << " -> ";

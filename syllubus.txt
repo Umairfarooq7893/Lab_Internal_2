@@ -2,31 +2,30 @@ Lab Internal 2 Programs
 DLL (Doubly Linked List) ADT
 CLL (Circular Linked List) ADT
 
-
 Stack using Array
 Stack using Linked List
 Infix → Postfix Conversion
 Parentheses Matching
 String Palindrome using Stack
 
-All programs of Hashing.
-
-
-BST ADT (Binary Search Tree)
-Binary Tree ADT
+Queue using Array.
+Queue using Linked List.
+Queue using circular Linked List.
+Heap Sort.
 Tree Traversals (Inorder, Preorder, Postorder)
 
 
 
 
-Queue using Array.
-Queue using Linked List.
-Queue using circular Linked List.
 
 
-Min & Max (Heap or basic)
-Heap Sort.
 
+
+
+
+All programs of Hashing.
+BST ADT (Binary Search Tree)
+Binary Tree ADT
 DFS (Depth First Search)
 BFS (Breadth First Search)
 
